@@ -1,0 +1,42 @@
+.users-container {
+    display: flex;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .search-input {
+    width: 300px;
+  }
+  
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .users-table th, .users-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .highlighted-row {
+    background-color: #f1f1f1;
+  }
+  
+  .status-active {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status-inactive {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .action-button {
+    margin-right: 5px;
+  }
+  

@@ -2,20 +2,20 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #fdfdfdd5;
   }
   
   /* Sidebar Styles */
   .sidebar {
     width: 250px;
     height: 100vh;
-    background: linear-gradient(180deg, #2c3e50, #34495e);
+    background-color: beige;
     padding-top: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .sidebar-link {
-    color: white !important;
+    color: rgb(14, 14, 14) !important;
     padding: 12px 20px;
     text-decoration: none;
     display: block;
@@ -24,8 +24,23 @@ body {
     border-left: 4px solid transparent;
   }
   
+  .sidebar-link.active {
+    /* تصميم الروابط النشطة */
+    background-color: #f0f0f0;
+    font-weight: bold;
+    box-shadow: 0 0 10px #d9d9d9, 0 0 10px #6f6f6f;
+
+
+
+  }
+  
+  .sidebar-link.active::after {
+    content: "→"; /* إضافة سهم */
+    margin-left: 10px;
+    color: #3c00ff;
+  }
   .sidebar-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(12, 12, 12, 0.1);
     border-left: 4px solid #3498db;
     transform: translateX(5px);
   }
@@ -59,7 +74,214 @@ body {
   
   /* Content Styles */
   .content {
-    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width:80%;
+    margin: 10px auto;
   }
+  /* Light Mode */
+/* .light-theme {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Dark Mode */
+  .dark-theme {
+    background-color: #1a1a1a;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Button Styles */
+  button {
+    margin: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  /* تطبيق ستايل الوضع الداكن على الـ Navbar والـ Sidebar وباقي العناصر */
+.dark-theme .navbar, 
+.dark-theme .sidebar, 
+.dark-theme .content {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+/* Dark Mode Styles */
+.dark-theme .card {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme .card svg {
+  color: #fff;
+}
+/* Dashboard Card Styles */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+/* Icon Styles */
+.card svg {
+  color: #007bff; /* Blue color for icons */
+}
+/* Custom Navbar Styles */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+.navbar-brand {
+  font-size: 1.75rem; /* Adjust brand logo size */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border from toggle button */
+}
+
+.navbar-toggler:focus {
+  box-shadow: none; /* Remove focus outline */
+}
+
+/* Adjust icon alignment */
+.navbar .nav-link {
+  display: flex;
+  align-items: center;
+}
+/* Navbar Link Hover Effect */
+.navbar .nav-link {
+  position: relative;
+  color: #000; /* Default link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff; /* Underline color */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0); /* Start with no width */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #007bff; /* Link color on hover */
+}
+
+.navbar .nav-link:hover::after {
+  transform: scaleX(1); /* Expand the underline */
+  transform-origin: bottom left;
+}
+
+/* Dark Mode Support */
+.navbar-dark .nav-link {
+  color: #fff; /* Default link color for dark mode */
+}
+
+.navbar-dark .nav-link:hover {
+  color: #007bff; /* Link color on hover for dark mode */
+}
+/* Add a moving effect on hover */
+.navbar .nav-link:hover {
+  color: #007bff;
+  transform: translateY(-3px); /* Move the link up slightly */
+}
+
+.navbar .nav-link {
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transform to the transition */
+}
+/* Search Results Styles */
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-result-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-result-item h6 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.search-result-item p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+.Form.Control {
+  background-color: #faf9f9;
+  color: #cecccc;
+}
+.search-input {
+  background-color: white; /* الخلفية بيضاء */
+  color: black; /* النص أسود */
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 100%;
+}
+
+.search-input::placeholder {
+  color: black; /* لون الـ placeholder أسود */
+}
+
+.search-results {
+  background-color: white;
+  border: 1px solid #ddd;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+}
+
+.no-results {
+  color: red;
+  font-size: 14px;
+}

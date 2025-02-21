@@ -1,40 +1,73 @@
 import { Row, Col, Card } from 'react-bootstrap';
 import Charts from '../Components/Charts';
+import { FaUsers, FaChartLine, FaGlobeAmericas, FaArrowUp, FaArrowDown } from 'react-icons/fa'; // Import icons
 
 function Dashboard() {
   return (
     <div>
-      <h2>Dashboard</h2>
+      <h2 className="mb-3 text-muted">Dashboard</h2>
       <Row>
-        <Col md={4}>
-          <Card>
+        {/* Total Visits Card */}
+        <Col xs={12} sm={6} md={4} className="mb-4">
+          <Card className="text-center h-100">
             <Card.Body>
+              <FaUsers size={40} className="mb-3" /> {/* Icon */}
               <Card.Title>Total Visits</Card.Title>
-              <Card.Text>Total Page Views: 100k</Card.Text>
-              <Card.Text>Unique Visitor: 50k</Card.Text>
+              <Card.Text>
+                <strong>Total Page Views:</strong> 100k
+              </Card.Text>
+              <Card.Text>
+                <strong>Unique Visitors:</strong> 50k
+              </Card.Text>
+              <Card.Text className="text-success">
+                <FaArrowUp /> 5% increase from last month
+              </Card.Text>
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4}>
-          <Card>
+
+        {/* Source Rate Card */}
+        <Col xs={12} sm={6} md={4} className="mb-4">
+          <Card className="text-center h-100">
             <Card.Body>
+              <FaChartLine size={40} className="mb-3" /> {/* Icon */}
               <Card.Title>Source Rate</Card.Title>
-              <Card.Text>21%</Card.Text>
+              <Card.Text>
+                <strong>Conversion Rate:</strong> 21%
+              </Card.Text>
+              <Card.Text>
+                <strong>Bounce Rate:</strong> 12%
+              </Card.Text>
+              <Card.Text className="text-danger">
+                <FaArrowDown /> 2% decrease from last month
+              </Card.Text>
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4}>
-          <Card>
+
+        {/* Site Visits Card */}
+        <Col xs={12} sm={6} md={4} className="mb-4">
+          <Card className="text-center h-100">
             <Card.Body>
+              <FaGlobeAmericas size={40} className="mb-3" /> {/* Icon */}
               <Card.Title>Site Visits</Card.Title>
-              <Card.Text>Visitors From USA: 50%</Card.Text>
-              <Card.Text>Visitors From Europe: 80%</Card.Text>
+              <Card.Text>
+                <strong>Visitors From USA:</strong> 50%
+              </Card.Text>
+              <Card.Text>
+                <strong>Visitors From Europe:</strong> 80%
+              </Card.Text>
+              <Card.Text className="text-success">
+                <FaArrowUp /> 10% increase from last month
+              </Card.Text>
             </Card.Body>
           </Card>
         </Col>
       </Row>
+
+      {/* Charts Section */}
       <Row className="mt-4">
-        <Col md={12}>
+        <Col xs={12}>
           <Charts />
         </Col>
       </Row>

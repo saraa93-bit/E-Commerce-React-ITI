@@ -1,114 +1,139 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "iPhone 14 Pro",
-        "image": "https://example.com/images/iphone14pro.jpg",
-        "price": 1200,
-        "description": "iPhone 14 Pro with Super Retina XDR display and 48MP camera.",
-        "quantity": 10,
-        "category": "Phones"
-      },
-      {
-        "id": 2,
-        "name": "Samsung Galaxy S23",
-        "image": "https://example.com/images/samsungS23.jpg",
-        "price": 1100,
-        "description": "Samsung Galaxy S23 with Snapdragon 8 Gen 2 processor.",
-        "quantity": 15,
-        "category": "Phones"
-      },
-      {
-        "id": 3,
-        "name": "Sony WH-1000XM4",
-        "image": "https://example.com/images/sony-headphones.jpg",
-        "price": 350,
-        "description": "Sony WH-1000XM4 wireless headphones with noise cancellation.",
-        "quantity": 20,
-        "category": "Headphones"
-      },
-      {
-        "id": 4,
-        "name": "Dell XPS 15",
-        "image": "https://example.com/images/dell-xps15.jpg",
-        "price": 1800,
-        "description": "Dell XPS 15 laptop with i7 processor and RTX 3050 graphics card.",
-        "quantity": 5,
-        "category": "Laptops"
-      },
-      {
-        "id": 5,
-        "name": "Adidas T-Shirt",
-        "image": "https://example.com/images/adidas-tshirt.jpg",
-        "price": 50,
-        "description": "100% cotton Adidas T-Shirt, perfect for sports.",
-        "quantity": 30,
-        "category": "Clothing"
-      }
-    ],
-    "users": [
-      {
-        "id": 1,
-        "name": "User One",
-        "email": "user1@example.com",
-        "password": "user123",
-        "role": "user"
-      },
-      {
-        "id": 2,
-        "name": "User Two",
-        "email": "user2@example.com",
-        "password": "user456",
-        "role": "user"
-      },
-      {
-        "id": 3,
-        "name": "User Three",
-        "email": "user3@example.com",
-        "password": "user789",
-        "role": "user"
-      },
-      {
-        "id": 4,
-        "name": "Admin One",
-        "email": "admin1@example.com",
-        "password": "admin123",
-        "role": "admin"
-      },
-      {
-        "id": 5,
-        "name": "Admin Two",
-        "email": "admin2@example.com",
-        "password": "admin456",
-        "role": "admin"
-      },
-      {
-        "id": 6,
-        "name": "Admin Three",
-        "email": "admin3@example.com",
-        "password": "admin789",
-        "role": "admin"
-      }
-    ],
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 14 Pro",
+      "image": "https://example.com/images/iphone14pro.jpg",
+      "price": 1200,
+      "description": "iPhone 14 Pro with Super Retina XDR display and 48MP camera.",
+      "quantity": 10,
+      "category": "Phones"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S23",
+      "image": "https://example.com/images/samsungS23.jpg",
+      "price": 1100,
+      "description": "Samsung Galaxy S23 with Snapdragon 8 Gen 2 processor.",
+      "quantity": 15,
+      "category": "Phones"
+    },
+    {
+      "id": "3",
+      "name": "Sony WH-1000XM4",
+      "image": "https://example.com/images/sony-headphones.jpg",
+      "price": 350,
+      "description": "Sony WH-1000XM4 wireless headphones with noise cancellation.",
+      "quantity": 20,
+      "category": "Headphones"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 15",
+      "image": "https://example.com/images/dell-xps15.jpg",
+      "price": 1800,
+      "description": "Dell XPS 15 laptop with i7 processor and RTX 3050 graphics card.",
+      "quantity": 5,
+      "category": "Laptops"
+    },
+    {
+      "id": "5",
+      "name": "Adidas T-Shirt",
+      "image": "https://example.com/images/adidas-tshirt.jpg",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "User One",
+      "email": "user1@example.com",
+      "password": "user123",
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "name": "User Two",
+      "email": "user2@example.com",
+      "password": "user456",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "name": "User Three",
+      "email": "user3@example.com",
+      "password": "user789",
+      "role": "user"
+    },
+    {
+      "id": "4",
+      "name": "Admin One",
+      "email": "admin1@example.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "6",
+      "name": "Admin Three",
+      "email": "admin3@example.com",
+      "password": "admin789",
+      "role": "user"
+    }
+  ],
+  
     "orders": [
       {
         "orderId": 101,
         "userId": 1,
+        "username": "User One",
         "products": [
-          { "productId": 1, "quantity": 1 },
-          { "productId": 3, "quantity": 2 }
+          {
+            "productId": 1,
+            "quantity": 1
+          },
+          {
+            "productId": 3,
+            "quantity": 2
+          }
         ],
         "totalPrice": 1900,
-        "status": "Completed"
+        "status": "shipped"
       },
       {
         "orderId": 102,
         "userId": 2,
+        "username": "User Two",
         "products": [
-          { "productId": 2, "quantity": 1 },
-          { "productId": 5, "quantity": 3 }
+          {
+            "productId": 2,
+            "quantity": 1
+          },
+          {
+            "productId": 5,
+            "quantity": 3
+          }
         ],
         "totalPrice": 1250,
+        "status": "Pending"
+      },
+      {
+        "orderId": 109,
+        "userId": 3,
+        "username": "User Three",
+        "products": [
+          {
+            "productId": 4,
+            "quantity": 1
+          },
+          {
+            "productId": 1,
+            "quantity": 3
+          }
+        ],
+        "totalPrice": 2100,
         "status": "Pending"
       }
     ]

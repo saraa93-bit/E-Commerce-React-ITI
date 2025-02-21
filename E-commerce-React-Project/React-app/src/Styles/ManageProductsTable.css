@@ -1,0 +1,43 @@
+.products-container {
+    display: flex;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .products-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .products-table th, .products-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .action-button {
+    margin-right: 5px;
+  }
+  
+  .action-menu {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: none;
+  }
+  
+  .action-button:hover + .action-menu {
+    display: block;
+  }
+  

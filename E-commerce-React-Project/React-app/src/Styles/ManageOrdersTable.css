@@ -1,0 +1,48 @@
+.orders-container {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .orders-table th, .orders-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .orders-table tbody tr {
+    transition: transform 0.3s ease,  0.3s ease;
+
+}
+
+.orders-table tbody tr:hover {
+    background-color: #1d2486;
+    transform: scale(1.02); /* Slight zoom effect */
+    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+  
+  .highlighted-row {
+    background-color: #8c8b90;
+  }
+  
+  .status-completed {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status-pending {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .action-button {
+    border: none;
+    background: transparent;
+  }
+  

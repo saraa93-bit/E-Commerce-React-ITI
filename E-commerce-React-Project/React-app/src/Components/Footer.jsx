@@ -9,7 +9,8 @@ function Footer() {
                 
                 {/* القسم الأول: Subscribe */}
                 <div className="col-lg-3 col-md-6 mb-4 d-flex flex-column h-100">
-                  <p className="fs-2 fw-bold m-3">S-Tech</p>
+                  <p className="fs-2 fw-bold m-3">Exclusive</p>
+                  <p className="fw-bold fs-5 p-3">Subscribe</p>
                   <p className=" m-3">Get 10% off your first order</p>
                   <div className="position-relative" style={{ width: '100%' }}>
                     <input
@@ -19,7 +20,7 @@ function Footer() {
                       style={{ backgroundColor: 'black', border: '1px solid white', color: 'white', fontSize: '14px', paddingRight: '40px' }}
                     />
                     <button className="btn btn-dark rounded-2 position-absolute" 
-                      style={{ top: '50%', right: '10px', transform: 'translateY(-50%)', border: 'none', background: 'transparent' }}>
+                      style={{ top: '-10%', right: '-5%', transform: 'translateY(-50%)', border: 'none', background: 'transparent' }}>
                       <img src="../../public/images/Footer/Vector.png" alt="Arrow" style={{ width: '20px', height: '20px' }} />
                     </button>
                   </div>
@@ -76,8 +77,6 @@ function Footer() {
                   </div>
     
                   <div className="mt-auto p-3">
-                    <p className="fw-bold fs-5 p-3">Subscribe</p>
-
                     <a href="#" className="me-3"><Facebook color="white" size={30} /></a>
                     <a href="#" className="me-3"><Twitter color="white" size={30} /></a>
                     <a href="#" className="me-3"><Instagram color="white" size={30} /></a>
@@ -88,7 +87,7 @@ function Footer() {
             </div>
             
             <div className="col-12 text-center">
-              <p className=" text-secondary">&copy; 2025 S-Tech, All rights reserved.</p>
+              <p className=" text-secondary">&copy; 2025 Exclusive, All rights reserved.</p>
             </div>
           </footer>
         </div>
