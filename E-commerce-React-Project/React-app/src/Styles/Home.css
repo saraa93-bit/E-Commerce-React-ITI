@@ -1,4 +1,3 @@
-/* Home Page Styles */
 
 .container {
   width: 100vw;
@@ -7,7 +6,14 @@
   font-family: Arial, sans-serif;
 }
 
-
+.list-group-item:hover {
+  background-color: #bebdbd;
+  color: #b2515b;
+}
+.list-group-item> a:hover {
+  background-color: #f5a3a3;
+  color: #b2515b;
+}
 .section-label {
   color: #e74c3c;
   font-size: 14px;
@@ -84,9 +90,6 @@
 .view-all-btn:hover {
   background-color: #c0392b;
 }
-/* Home Page Styles */
-
-
 
 .section-label {
   color: #e74c3c;

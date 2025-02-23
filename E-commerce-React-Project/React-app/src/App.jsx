@@ -1,34 +1,51 @@
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UserLayout from "./Layouts/UserLayout";
 import AdminLayout from "./Layouts/AdminLayout";
 import Home from "./Pages/Home";
 import Register from "./Pages/Register";
+import Login from "./Pages/Login";
 import Dashboard from "./Pages/Dashboard";
 import Email from "./Pages/Email";
 import Calendar from "./Pages/Calendar";
 import Cards from "./Components/Cards";
 import Charts from "./Components/Charts";
-import ManageUsersTable from "./Components/ManageUsers";
+import ManageUsersTable from "./Components/ManageUsersTable";
 import ManageProductsTable from "./Components/ManageProductsTable";
 import ManageOrdersTable from "./Components/ManageOrders";
 import ProductPage from "./Pages/ProductPage";
+import Wishlist from "./Pages/Wishlist";
+import Cart from "./Pages/Cart";
+import Checkout from "./Pages/Checkout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Styles/Style.css";
 
-function App() {
+const App = () => {
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (product) => {
+    setCartItems([...cartItems, product]);
+  };
+
+  const clearCart = () => {
+    setCartItems([]);
+  };
+
   return (
     <Router>
+
       <Routes>
-        {/* واجهة المستخدم العادي */}
         <Route element={<UserLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
+          <Route index element={<Home />} />
+          <Route path="/home" element={<Home addToCart={addToCart} />} />
           <Route path="/register" element={<Register />} />
-          
-          <Route path="/product" element={<ProductPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/cart" element={<Cart cartItems={cartItems} updateCart={setCartItems} />} />
+          <Route path="/checkout" element={<Checkout cartItems={cartItems} clearCart={clearCart} />} />
+          <Route path="/ProductPage" element={<ProductPage addToCart={addToCart} />} />
         </Route>
 
-        {/* واجهة الأدمن */}
         <Route element={<AdminLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/email" element={<Email />} />
@@ -40,11 +57,10 @@ function App() {
           <Route path="/ManageOrders" element={<ManageOrdersTable />} />
         </Route>
 
-        {/* صفحة 404 */}
-        <Route path="*" element={<div>404 - Page Not Found</div>} />
+        <Route path="*" element={<div className="text-center mt-5">404 - Page Not Found</div>} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;

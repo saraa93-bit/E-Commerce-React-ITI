@@ -22,8 +22,8 @@
 
 .orders-table tbody tr:hover {
     background-color: #1d2486;
-    transform: scale(1.02); /* Slight zoom effect */
-    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    transform: scale(1.02);
+    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.3);
 }
 
   

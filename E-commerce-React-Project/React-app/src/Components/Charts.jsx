@@ -36,7 +36,6 @@ const options = {
         const chart = legend.chart;
         const meta = chart.getDatasetMeta(index);
 
-        // Toggle visibility of the dataset
         meta.hidden = !meta.hidden;
         chart.update();
       },

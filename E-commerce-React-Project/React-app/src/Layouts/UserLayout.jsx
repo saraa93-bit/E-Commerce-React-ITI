@@ -1,15 +1,16 @@
-// UserLayout.js
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import NavbarComponent from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
 const UserLayout = () => {
+  const location = useLocation();
+
+  const isAuthPage = location.pathname === "/login" || location.pathname === "/register";
+
   return (
     <div>
-      <NavbarComponent />
-      
-      {/* هنا يمكنك إضافة أي عناصر مشتركة لواجهة المستخدم العادي */}
-      <Outlet /> {/* يعرض الصفحات الفرعية مثل الهوم والريجستر */}
+      <NavbarComponent hideIcons={isAuthPage} />
+      <Outlet />
       <Footer />
     </div>
   );

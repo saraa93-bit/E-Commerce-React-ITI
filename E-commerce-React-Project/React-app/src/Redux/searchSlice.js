@@ -28,25 +28,18 @@ export const fetchSearchResults = (query) => async (dispatch) => {
   dispatch(setError(null));
 
   try {
-    const response = await axios.get('http://localhost:3001/products'); // تأكد من صحة المسار
+    const response = await axios.get('http://localhost:3000/products');
     let data = response.data;
 
-    // إذا كان ملف JSON يحتوي على كائن يحتوي على مصفوفة:
-    if (data.items) {
-      data = data.items;
-    }
-
-    console.log('Fetched Data:', data);
-
-    // التأكد من أن `data` هو مصفوفة قبل محاولة التصفية
     if (!Array.isArray(data)) {
       throw new Error('Invalid data format: Expected an array');
     }
 
-    // تنفيذ البحث فقط إذا كان `query` غير فارغ
+    console.log('Fetched Data:', data);
+
     const filteredResults = query
       ? data.filter((item) =>
-          item.name?.toLowerCase().includes(query.toLowerCase())
+          item.name?.toLowerCase().includes(query.trim().toLowerCase())
         )
       : [];
 
@@ -55,7 +48,7 @@ export const fetchSearchResults = (query) => async (dispatch) => {
     dispatch(setSearchResults(filteredResults));
   } catch (error) {
     console.error('Error fetching data:', error);
-    dispatch(setError(error.message));
+    dispatch(setError('Failed to fetch products. Please try again.'));
   } finally {
     dispatch(setLoading(false));
   }

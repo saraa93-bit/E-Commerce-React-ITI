@@ -7,11 +7,10 @@ function Dashboard() {
     <div>
       <h2 className="mb-3 text-muted">Dashboard</h2>
       <Row>
-        {/* Total Visits Card */}
         <Col xs={12} sm={6} md={4} className="mb-4">
           <Card className="text-center h-100">
             <Card.Body>
-              <FaUsers size={40} className="mb-3" /> {/* Icon */}
+              <FaUsers size={40} className="mb-3" />
               <Card.Title>Total Visits</Card.Title>
               <Card.Text>
                 <strong>Total Page Views:</strong> 100k
@@ -26,11 +25,10 @@ function Dashboard() {
           </Card>
         </Col>
 
-        {/* Source Rate Card */}
         <Col xs={12} sm={6} md={4} className="mb-4">
           <Card className="text-center h-100">
             <Card.Body>
-              <FaChartLine size={40} className="mb-3" /> {/* Icon */}
+              <FaChartLine size={40} className="mb-3" />
               <Card.Title>Source Rate</Card.Title>
               <Card.Text>
                 <strong>Conversion Rate:</strong> 21%
@@ -45,11 +43,10 @@ function Dashboard() {
           </Card>
         </Col>
 
-        {/* Site Visits Card */}
         <Col xs={12} sm={6} md={4} className="mb-4">
           <Card className="text-center h-100">
             <Card.Body>
-              <FaGlobeAmericas size={40} className="mb-3" /> {/* Icon */}
+              <FaGlobeAmericas size={40} className="mb-3" />
               <Card.Title>Site Visits</Card.Title>
               <Card.Text>
                 <strong>Visitors From USA:</strong> 50%
@@ -65,7 +62,6 @@ function Dashboard() {
         </Col>
       </Row>
 
-      {/* Charts Section */}
       <Row className="mt-4">
         <Col xs={12}>
           <Charts />

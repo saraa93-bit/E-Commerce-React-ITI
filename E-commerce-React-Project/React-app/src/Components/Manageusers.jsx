@@ -3,7 +3,7 @@ import { Table, Form, Modal, Button } from 'react-bootstrap';
 import axios from 'axios';
 import { Dropdown } from 'react-bootstrap';
 import { FaCog } from 'react-icons/fa';
-import '../Styles/ManageUsersTable.css'; // تأكد من إنشاء ملف CSS لهذا التصميم
+import '../Styles/ManageUsersTable.css';
 
 const ManageUsersTable = () => {
   const [users, setUsers] = useState([]);
@@ -100,7 +100,6 @@ const ManageUsersTable = () => {
         </Table>
       </div>
 
-      {/* مودال التأكيد */}
       <Modal show={showModal} onHide={handleDeleteCancel}>
         <Modal.Header closeButton>
           <Modal.Title>Confirm Delete</Modal.Title>

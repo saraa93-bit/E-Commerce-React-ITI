@@ -2,21 +2,239 @@
   "products": [
     {
       "id": "1",
+      "name": "Gucci hand bag",
+      "image": "/images/product/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+      "price": 1200,
+      "description": "elligant and modest Gucci hand bag",
+      "quantity": 10,
+      "category": "women",
+      "oldPrice": "$160",
+      "discount": "-40%"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S23",
+      "image": "/images/product/ideapad-gaming-3i-01-500x500 1.png",
+      "price": 1100,
+      "description": "Samsung Galaxy S23 with Snapdragon 8 Gen 2 processor.",
+      "quantity": 15,
+      "category": "Phones",
+      "oldPrice": "$560",
+      "discount": "-20%"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 15",
+      "image": "/images/product/gammaxx-l240-argb-1-500x500 1.png",
+      "price": 1800,
+      "description": "Dell XPS 15 laptop with i7 processor and RTX 3050 graphics card.",
+      "quantity": 5,
+      "category": "Laptops",
+      "oldPrice": "$2100",
+      "discount": "-10%"
+    },
+    {
+      "id": "5",
+      "name": "Adidas jacket",
+      "image": "/images/product/chair.png",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing",
+      "oldPrice": "$560",
+      "discount": "-20%"
+    },
+    {
+      "id": "6",
+      "name": "Adidas jacket",
+      "image": "/images/product/698717_Z8A1X_3475_001_100_0000_Light-Reversible-quilted-satin-jacket 1.png",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing",
+      "oldPrice": "$560",
+      "discount": "-20%"
+    },
+    {
+      "id": "7",
+      "name": "Adidas jacket",
+      "image": "/images/product/g92-2-500x500 1.png",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing",
+      "oldPrice": "$560",
+      "discount": "-20%"
+    },
+    {
+      "id": "8",
+      "name": "keyboard",
+      "image": "/images/product/ak-900-01-500x500 1 (1).png",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing",
+      "oldPrice": "$560",
+      "discount": "-20%"
+    },
+    {
+      "id": "9",
+      "name": "keyboard",
+      "image": "/images/product/ak-900-01-500x500 1 (1).png",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing",
+      "oldPrice": "$560",
+      "discount": "-20%"
+    },
+    {
+      "id": "10",
+      "name": "keyboard",
+      "image": "/images/product/ak-900-01-500x500 1 (1).png",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing",
+      "oldPrice": "$560",
+      "discount": "-20%"
+    },
+    {
+      "id": "11",
+      "name": "chair",
+      "image": "/images/product/chair.png",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing",
+      "oldPrice": "$560",
+      "discount": "-20%"
+    }
+  ],
+  "wishlist": [
+    {
+      "id": "1",
+      "name": "RGB liquid CPU Cooler",
+      "price": "$1960",
+      "image": "/images/product/g92-2-500x500 1.png",
+      "oldPrice": "$560",
+      "discount": "-20%"
+    }
+  ],
+  "cart": [
+    {
+      "id": "1",
       "name": "iPhone 14 Pro",
-      "image": "https://example.com/images/iphone14pro.jpg",
+      "image": "/images/product/ideapad-gaming-3i-01-500x500 1.png",
       "price": 1200,
       "description": "iPhone 14 Pro with Super Retina XDR display and 48MP camera.",
       "quantity": 10,
       "category": "Phones"
     },
     {
+      "id": "1",
+      "name": "RGB liquid CPU Cooler",
+      "price": "$1960",
+      "image": "/images/product/gammaxx-l240-argb-1-500x500 1.png"
+    },
+    {
+      "id": "1",
+      "name": "RGB liquid CPU Cooler",
+      "price": "$1960",
+      "image": "/images/product/gammaxx-l240-argb-1-500x500 1.png"
+    },
+    {
+      "id": "1",
+      "name": "RGB liquid CPU Cooler",
+      "price": "$1960",
+      "image": "/images/product/ideapad-gaming-3i-01-500x500 1.png"
+    },
+    {
+      "id": "1",
+      "name": "RGB liquid CPU Cooler",
+      "price": "$1960",
+      "image": "/images/product/gammaxx-l240-argb-1-500x500 1.png"
+    },
+    {
       "id": "2",
       "name": "Samsung Galaxy S23",
-      "image": "https://example.com/images/samsungS23.jpg",
+      "image": "/images/product/ideapad-gaming-3i-01-500x500 1.png",
       "price": 1100,
       "description": "Samsung Galaxy S23 with Snapdragon 8 Gen 2 processor.",
       "quantity": 15,
       "category": "Phones"
+    },
+    {
+      "id": "3",
+      "name": "Sony WH-1000XM4",
+      "image": "/images/product/ps5-slim-goedkope-playstation_large 1.png",
+      "price": 350,
+      "description": "Sony WH-1000XM4 wireless headphones with noise cancellation.",
+      "quantity": 20,
+      "category": "Headphones"
+    },
+    {
+      "id": "5",
+      "name": "Adidas T-Shirt",
+      "image": "/images/product/adidas-tshirt.jpg",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing"
+    },
+    {
+      "id": "1",
+      "name": "iPhone 14 Pro",
+      "image": "/images/product/iphone14pro.jpg",
+      "price": 1200,
+      "description": "iPhone 14 Pro with Super Retina XDR display and 48MP camera.",
+      "quantity": 10,
+      "category": "Phones"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 15",
+      "image": "/images/product/dell-xps15.jpg",
+      "price": 1800,
+      "description": "Dell XPS 15 laptop with i7 processor and RTX 3050 graphics card.",
+      "quantity": 5,
+      "category": "Laptops"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S23",
+      "image": "/images/product/samsungS23.jpg",
+      "price": 1100,
+      "description": "Samsung Galaxy S23 with Snapdragon 8 Gen 2 processor.",
+      "quantity": 15,
+      "category": "Phones"
+    },
+    {
+      "id": "3",
+      "name": "Sony WH-1000XM4",
+      "image": "/images/product/sony-headphones.jpg",
+      "price": 350,
+      "description": "Sony WH-1000XM4 wireless headphones with noise cancellation.",
+      "quantity": 20,
+      "category": "Headphones"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S23",
+      "image": "/images/product/samsungS23.jpg",
+      "price": 1100,
+      "description": "Samsung Galaxy S23 with Snapdragon 8 Gen 2 processor.",
+      "quantity": 15,
+      "category": "Phones"
+    },
+    {
+      "id": "3",
+      "name": "Sony WH-1000XM4",
+      "image": "https://example.com/images/sony-headphones.jpg",
+      "price": 350,
+      "description": "Sony WH-1000XM4 wireless headphones with noise cancellation.",
+      "quantity": 20,
+      "category": "Headphones"
     },
     {
       "id": "3",
@@ -44,16 +262,189 @@
       "description": "100% cotton Adidas T-Shirt, perfect for sports.",
       "quantity": 30,
       "category": "Clothing"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S23",
+      "image": "https://example.com/images/samsungS23.jpg",
+      "price": 1100,
+      "description": "Samsung Galaxy S23 with Snapdragon 8 Gen 2 processor.",
+      "quantity": 15,
+      "category": "Phones"
+    },
+    {
+      "id": "1",
+      "name": "iPhone 14 Pro",
+      "image": "/images/product/image 63.png",
+      "price": 1200,
+      "description": "iPhone 14 Pro with Super Retina XDR display and 48MP camera.",
+      "quantity": 10,
+      "category": "Phones"
+    },
+    {
+      "id": "1",
+      "name": "iPhone 14 Pro",
+      "image": "/images/product/image 63.png",
+      "price": 1200,
+      "description": "iPhone 14 Pro with Super Retina XDR display and 48MP camera.",
+      "quantity": 10,
+      "category": "Phones"
+    },
+    {
+      "id": "1",
+      "name": "iPhone 14 Pro",
+      "image": "/images/product/image 63.png",
+      "price": 1200,
+      "description": "iPhone 14 Pro with Super Retina XDR display and 48MP camera.",
+      "quantity": 10,
+      "category": "Phones"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 15",
+      "image": "https://example.com/images/dell-xps15.jpg",
+      "price": 1800,
+      "description": "Dell XPS 15 laptop with i7 processor and RTX 3050 graphics card.",
+      "quantity": 5,
+      "category": "Laptops"
+    },
+    {
+      "id": "5",
+      "name": "Adidas T-Shirt",
+      "image": "https://example.com/images/adidas-tshirt.jpg",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing"
+    },
+    {
+      "id": "5",
+      "name": "Adidas T-Shirt",
+      "image": "https://example.com/images/adidas-tshirt.jpg",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing"
+    },
+    {
+      "id": "5",
+      "name": "Adidas T-Shirt",
+      "image": "https://example.com/images/adidas-tshirt.jpg",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing"
+    },
+    {
+      "id": "5",
+      "name": "Adidas T-Shirt",
+      "image": "https://example.com/images/adidas-tshirt.jpg",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing"
+    },
+    {
+      "id": "5",
+      "name": "Adidas T-Shirt",
+      "image": "https://example.com/images/adidas-tshirt.jpg",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 15",
+      "image": "https://example.com/images/dell-xps15.jpg",
+      "price": 1800,
+      "description": "Dell XPS 15 laptop with i7 processor and RTX 3050 graphics card.",
+      "quantity": 5,
+      "category": "Laptops"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 15",
+      "image": "https://example.com/images/dell-xps15.jpg",
+      "price": 1800,
+      "description": "Dell XPS 15 laptop with i7 processor and RTX 3050 graphics card.",
+      "quantity": 5,
+      "category": "Laptops"
+    },
+    {
+      "id": "5",
+      "name": "Adidas T-Shirt",
+      "image": "https://example.com/images/adidas-tshirt.jpg",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing"
+    },
+    {
+      "id": "5",
+      "name": "Adidas T-Shirt",
+      "image": "https://example.com/images/adidas-tshirt.jpg",
+      "price": 50,
+      "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+      "quantity": 30,
+      "category": "Clothing"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 15",
+      "image": "https://example.com/images/dell-xps15.jpg",
+      "price": 1800,
+      "description": "Dell XPS 15 laptop with i7 processor and RTX 3050 graphics card.",
+      "quantity": 5,
+      "category": "Laptops"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 15",
+      "image": "https://example.com/images/dell-xps15.jpg",
+      "price": 1800,
+      "description": "Dell XPS 15 laptop with i7 processor and RTX 3050 graphics card.",
+      "quantity": 5,
+      "category": "Laptops"
+    },
+    {
+      "id": "4",
+      "name": "Dell XPS 15",
+      "image": "https://example.com/images/dell-xps15.jpg",
+      "price": 1800,
+      "description": "Dell XPS 15 laptop with i7 processor and RTX 3050 graphics card.",
+      "quantity": 5,
+      "category": "Laptops"
+    },
+    {
+      "id": "3",
+      "name": "Sony WH-1000XM4",
+      "image": "https://example.com/images/sony-headphones.jpg",
+      "price": 350,
+      "description": "Sony WH-1000XM4 wireless headphones with noise cancellation.",
+      "quantity": 20,
+      "category": "Headphones"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S23",
+      "image": "https://example.com/images/samsungS23.jpg",
+      "price": 1100,
+      "description": "Samsung Galaxy S23 with Snapdragon 8 Gen 2 processor.",
+      "quantity": 15,
+      "category": "Phones"
+    },
+    {
+      "id": "1",
+      "name": "iPhone 14 Pro",
+      "image": "/images/product/image 63.png",
+      "price": 1200,
+      "description": "iPhone 14 Pro with Super Retina XDR display and 48MP camera.",
+      "quantity": 10,
+      "category": "Phones"
     }
   ],
   "users": [
-    {
-      "id": "1",
-      "name": "User One",
-      "email": "user1@example.com",
-      "password": "user123",
-      "role": "user"
-    },
     {
       "id": "2",
       "name": "User Two",
@@ -81,61 +472,201 @@
       "email": "admin3@example.com",
       "password": "admin789",
       "role": "user"
+    },
+    {
+      "id": "7b44",
+      "name": "saraa talat",
+      "emailOrPhone": "admin9@example.com",
+      "password": "1234567"
     }
   ],
-  
-    "orders": [
-      {
-        "orderId": 101,
-        "userId": 1,
-        "username": "User One",
-        "products": [
-          {
-            "productId": 1,
-            "quantity": 1
-          },
-          {
-            "productId": 3,
-            "quantity": 2
-          }
-        ],
-        "totalPrice": 1900,
-        "status": "shipped"
+  "orders": [
+    {
+      "orderId": 101,
+      "userId": 1,
+      "username": "User One",
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 1
+        },
+        {
+          "productId": 3,
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 1900,
+      "status": "shipped",
+      "id": "e979"
+    },
+    {
+      "orderId": 102,
+      "userId": 2,
+      "username": "User Two",
+      "products": [
+        {
+          "productId": 2,
+          "quantity": 1
+        },
+        {
+          "productId": 5,
+          "quantity": 3
+        }
+      ],
+      "totalPrice": 1250,
+      "status": "Pending",
+      "id": "1b7f"
+    },
+    {
+      "orderId": 109,
+      "userId": 3,
+      "username": "User Three",
+      "products": [
+        {
+          "productId": 4,
+          "quantity": 1
+        },
+        {
+          "productId": 1,
+          "quantity": 3
+        }
+      ],
+      "totalPrice": 2100,
+      "status": "Pending",
+      "id": "8d01"
+    },
+    {
+      "id": "bf40",
+      "userId": 1,
+      "username": "saraa talat",
+      "products": [],
+      "totalPrice": 0,
+      "status": "Pending"
+    },
+    {
+      "id": "8e19",
+      "user": {
+        "firstName": "",
+        "companyName": "",
+        "streetAddress": "",
+        "apartment": "",
+        "city": "",
+        "phone": "",
+        "email": ""
       },
-      {
-        "orderId": 102,
-        "userId": 2,
-        "username": "User Two",
-        "products": [
-          {
-            "productId": 2,
-            "quantity": 1
-          },
-          {
-            "productId": 5,
-            "quantity": 3
-          }
-        ],
-        "totalPrice": 1250,
-        "status": "Pending"
+      "products": [
+        {
+          "id": "3",
+          "name": "Sony WH-1000XM4",
+          "image": "/images/product/ideapad-gaming-3i-01-500x500 1.png",
+          "price": 350,
+          "description": "Sony WH-1000XM4 wireless headphones with noise cancellation.",
+          "quantity": 2,
+          "category": "Headphones"
+        },
+        {
+          "id": "1",
+          "name": "iPhone 14 Pro",
+          "image": "/images/product/image 63.png",
+          "price": 1200,
+          "description": "iPhone 14 Pro with Super Retina XDR display and 48MP camera.",
+          "quantity": 3,
+          "category": "Phones"
+        }
+      ],
+      "totalPrice": 4300,
+      "paymentMethod": "cash",
+      "status": "Pending"
+    },
+    {
+      "id": "3edd",
+      "user": {
+        "firstName": "saraa",
+        "companyName": "ITI",
+        "streetAddress": "Second tenth adjacent 81 pieces 141",
+        "apartment": "6",
+        "city": "10th of ramadan",
+        "phone": "01143549349",
+        "email": "dr.saraatalat@gmail.com"
       },
-      {
-        "orderId": 109,
-        "userId": 3,
-        "username": "User Three",
-        "products": [
-          {
-            "productId": 4,
-            "quantity": 1
-          },
-          {
-            "productId": 1,
-            "quantity": 3
-          }
-        ],
-        "totalPrice": 2100,
-        "status": "Pending"
-      }
-    ]
-  }
-  
+      "products": [],
+      "totalPrice": 0,
+      "paymentMethod": "cash",
+      "status": "Pending"
+    },
+    {
+      "id": "5e75",
+      "user": {
+        "firstName": "saraa",
+        "companyName": "ITI",
+        "streetAddress": "Second tenth adjacent 81 pieces 141",
+        "apartment": "6",
+        "city": "10th of ramadan",
+        "phone": "01143549349",
+        "email": "dr.saraatalat@gmail.com"
+      },
+      "products": [
+        {
+          "id": "2",
+          "name": "Samsung Galaxy S23",
+          "image": "/images/product/ideapad-gaming-3i-01-500x500 1.png",
+          "price": 1100,
+          "description": "Samsung Galaxy S23 with Snapdragon 8 Gen 2 processor.",
+          "quantity": 15,
+          "category": "Phones"
+        },
+        {
+          "id": "1",
+          "name": "iPhone 14 Pro",
+          "image": "/images/product/image 63.png",
+          "price": 1200,
+          "description": "iPhone 14 Pro with Super Retina XDR display and 48MP camera.",
+          "quantity": 10,
+          "category": "Phones"
+        }
+      ],
+      "totalPrice": 28500,
+      "paymentMethod": "cash",
+      "status": "Pending"
+    },
+    {
+      "id": "6eb7",
+      "user": {
+        "firstName": "saraa",
+        "companyName": "ITI",
+        "streetAddress": "Second tenth adjacent 81 pieces 141",
+        "apartment": "6",
+        "city": "10th of ramadan",
+        "phone": "01143549349",
+        "email": "dr.saraatalat@gmail.com"
+      },
+      "products": [
+        {
+          "id": "1",
+          "name": "Gucci hand bag",
+          "image": "/images/product/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+          "price": 1200,
+          "description": "elligant and modest Gucci hand bag",
+          "quantity": 1,
+          "category": "women",
+          "oldPrice": "$160",
+          "discount": "-40%"
+        },
+        {
+          "id": "5",
+          "name": "Adidas jacket",
+          "image": "/images/product/chair.png",
+          "price": 50,
+          "description": "100% cotton Adidas T-Shirt, perfect for sports.",
+          "quantity": 1,
+          "category": "Clothing",
+          "oldPrice": "$560",
+          "discount": "-20%"
+        }
+      ],
+      "totalPrice": 1250,
+      "paymentMethod": "cash",
+      "status": "Pending"
+    }
+  ]
+}

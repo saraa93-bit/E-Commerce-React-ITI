@@ -1,11 +1,13 @@
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
 import { FaArrowLeft, FaArrowRight, FaMobileAlt, FaDesktop, FaCamera, FaHeadphones, FaGamepad, FaChevronRight } from 'react-icons/fa';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
+import "../Styles/Home.css";
 import { Link } from 'react-router-dom';
 import { IoWatchOutline } from "react-icons/io5";
 
 
-const HomePage = () => {
+const HomePage = ({ addToCart }) => {
   const [activeCategory, setActiveCategory] = useState('Camera');
   const [openCategories, setOpenCategories] = useState({
     womensFashion: false,
@@ -52,13 +54,13 @@ const HomePage = () => {
               </li>
               {openCategories.mensFashion && (
                 <ul className="list-group mt-2 ms-3 mb-2">
-                  <li className="list-group-item"><a href="#" style={{ textDecoration: 'none', color: 'black' }}>Shirts</a></li>
-                  <li className="list-group-item"><a href="#" style={{ textDecoration: 'none', color: 'black' }}>Pants</a></li>
-                  <li className="list-group-item"><a href="#" style={{ textDecoration: 'none', color: 'black' }}>Shoes</a></li>
+                  <li className="list-group-item"><a href="#/ProductPage" style={{ textDecoration: 'none', color: 'black' }}>Shirts</a></li>
+                  <li className="list-group-item"><a href="/ProductPage" style={{ textDecoration: 'none', color: 'black' }}>Pants</a></li>
+                  <li className="list-group-item"><a href="/ProductPage" style={{ textDecoration: 'none', color: 'black' }}>Shoes</a></li>
                 </ul>
               )}
 
-              <li className="list-group-item"><a href="#" style={{ textDecoration: 'none', color: 'black' }}>Electronics</a></li>
+              <li className="list-group-item"><a href="/ProductPage" style={{ textDecoration: 'none', color: 'black' }}>Electronics</a></li>
               <li className="list-group-item"><a href="#" style={{ textDecoration: 'none', color: 'black' }}>Home & Lifestyle</a></li>
               <li className="list-group-item"><a href="#" style={{ textDecoration: 'none', color: 'black' }}>Medicine</a></li>
               <li className="list-group-item"><a href="#" style={{ textDecoration: 'none', color: 'black' }}>Sports & Outdoor</a></li>
@@ -76,12 +78,12 @@ const HomePage = () => {
                   <Card.Title style={{ fontSize: '14px', marginLeft: '10px', marginBottom: '0' }}>iPhone 14 Series</Card.Title>
                 </div>
                 <Card.Text style={{ fontSize: '2.9rem', fontWeight: 'bold' }}>Up to 10% off Voucher</Card.Text>
-                <a href="#" style={{ color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '5px' }}>
-                  <span style={{ textDecoration: 'underline', textUnderlineOffset: '10px' }}>Shop Now</span>
-                  <span style={{ fontSize: '2.5rem' }}>→</span>
+                <a href="/ProductPage" style={{ color: '#fff', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                  <span  style={{ textDecoration: 'underline', textUnderlineOffset: '10px' }}>Shop Now</span>
+                  <span  style={{ fontSize: '2.5rem' }}>→</span>
                 </a>
               </div>
-              <Card.Img variant="top" src="/images/product/hero_endframe__cvklg0xk3w6e_large 2.png" className="img-fluid" style={{ width: '50%', objectFit: 'contain' }} />
+              <Card.Img variant="top" src="/images/product/hero_endframe__cvklg0xk3w6e_large 2.png" className="img-fluid" style={{ width: '80%', height:'10%' ,objectFit: 'contain' }} />
               <div style={{ position: 'absolute', bottom: '10px', left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '8px' }}>
                 <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#777' }}></span>
                 <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: '#777' }}></span>
@@ -89,8 +91,7 @@ const HomePage = () => {
               </div>
             </Card>
 
-  <Container fluid className="mt-5 px-0 w-100">
-  {/* عنوان القسم والتايمر */}
+        <Container fluid className="mt-5 px-0 w-100">
           <Row className="mb-4 px-4">
                <Col xs={12} className="m-2 d-flex justify-content-between align-items-center">
                  <h4 className="m-2 f-bold fs-2 ">Flash Sales</h4>
@@ -98,7 +99,6 @@ const HomePage = () => {
                </Col>
           </Row>
 
-  {/* المنتجات */}
   
          <Row className="gx-3 gy-4 px-4 ms-0 ps-0">
            {[
@@ -110,14 +110,12 @@ const HomePage = () => {
       <Col xs={12} sm={6} md={4} lg={3} key={idx}>
         <Card className="h-100 shadow-sm">
           <div className="position-relative">
-            {/* الصورة مع تحديد ارتفاع ثابت */}
             <Card.Img
               variant="top"
               src={product.img}
               className="img-fluid"
               style={{ height: '150px', objectFit: 'contain', padding: '10px' }}
             />
-            {/* الخصم */}
             <span className="badge bg-danger position-absolute top-0 start-0 m-2">{product.discount}</span>
           </div>
           <Card.Body className="d-flex flex-column justify-content-between">
@@ -127,8 +125,7 @@ const HomePage = () => {
                 <strong className="text-danger">{product.price}</strong> <del className="text-muted">{product.oldPrice}</del>
               </Card.Text>
             </div>
-            {/* زر الإضافة إلى السلة */}
-            <Button variant="dark" className="w-75 mt-2">Add To Cart</Button>
+            <Button onClick={() => addToCart(product)} variant="dark" className="w-75 mt-2">Add To Cart</Button>
           </Card.Body>
         </Card>
         
@@ -186,7 +183,7 @@ const HomePage = () => {
               <Card.Text>
                 Black and White version of the PS5 coming out on sale.
               </Card.Text>
-              <Button variant="light">Shop Now</Button>
+              <Button href="/ProductPage" variant="light">Shop Now</Button>
             </Card.ImgOverlay>
           </Card>
         </Col>
@@ -201,7 +198,7 @@ const HomePage = () => {
                   <Card.Text>
                     Featured woman collections that give you another vibe.
                   </Card.Text>
-                  <Button variant="light">Shop Now</Button>
+                  <Button  href="/ProductPage"variant="light">Shop Now</Button>
                 </Card.ImgOverlay>
               </Card>
             </Col>
@@ -214,7 +211,7 @@ const HomePage = () => {
                   <Card.Text>
                     Amazon wireless speakers
                   </Card.Text>
-                  <Button variant="light">Shop Now</Button>
+                  <Button  href="/ProductPage"variant="light">Shop Now</Button>
                 </Card.ImgOverlay>
               </Card>
             </Col>
@@ -227,7 +224,7 @@ const HomePage = () => {
                   <Card.Text>
                     GUCCI INTENSE OUD EDP
                   </Card.Text>
-                  <Button variant="light">Shop Now</Button>
+                  <Button  href="/ProductPage"variant="light">Shop Now</Button>
                 </Card.ImgOverlay>
               </Card>
             </Col>
@@ -238,5 +235,7 @@ const HomePage = () => {
     </div>
   );
 };
-
+HomePage.propTypes = {
+  addToCart: PropTypes.func.isRequired
+};
 export default HomePage;

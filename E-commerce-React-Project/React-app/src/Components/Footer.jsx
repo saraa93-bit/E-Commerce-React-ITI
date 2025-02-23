@@ -7,7 +7,6 @@ function Footer() {
             <div className="container">
               <div className="row h-100">
                 
-                {/* القسم الأول: Subscribe */}
                 <div className="col-lg-3 col-md-6 mb-4 d-flex flex-column h-100">
                   <p className="fs-2 fw-bold m-3">Exclusive</p>
                   <p className="fw-bold fs-5 p-3">Subscribe</p>
@@ -26,7 +25,6 @@ function Footer() {
                   </div>
                 </div>
     
-                {/* القسم الثاني: Support */}
                 <div className="col-lg-2 col-md-6 mb-4 d-flex flex-column h-100">
                   <h5 className="fw-bold fs-5 p-4">Support</h5>
                   <p className="mb-3">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
@@ -34,7 +32,6 @@ function Footer() {
                   <p className="mb-3">+88015-88888-9999</p>
                 </div>
     
-                {/* القسم الثالث: Account */}
                 <div className="col-lg-2 col-md-6 mb-4 d-flex flex-column h-100">
                   <h5 className="fw-bold fs-5 p-4">Account</h5>
                   <ul className="list-unstyled">
@@ -46,7 +43,6 @@ function Footer() {
                   </ul>
                 </div>
     
-                {/* القسم الرابع: Quick Link */}
                 <div className="col-lg-2 col-md-6 mb-4 d-flex flex-column h-100">
                   <h5 className="fw-bold fs-5 p-4">Quick Link</h5>
                   <ul className="list-unstyled">
@@ -57,7 +53,6 @@ function Footer() {
                   </ul>
                 </div>
     
-                {/* القسم الخامس: Download App */}
                 <div className="col-lg-3 col-md-6 mb-4 d-flex flex-column h-100 align-items-start">
                   <h5 className="fw-bold fs-5 p-2 mt-3">Download App</h5>
                   <p className="fs-7 p-2">Save $3 with App New User Only</p>

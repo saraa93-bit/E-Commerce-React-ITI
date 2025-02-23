@@ -10,7 +10,7 @@ const AdminLayout = () => {
       <div className="d-flex flex-grow-1">
         <Sidebar />
         <div className="content flex-grow-1 p-3" style={{ overflowY: "auto" }}>
-          <Outlet /> {/* يعرض الصفحات الفرعية مثل الداشبورد وإدارة المستخدمين */}
+          <Outlet />
         </div>
       </div>
       <Footer style={{ width: "100vw" }} />

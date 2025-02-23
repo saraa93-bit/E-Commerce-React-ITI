@@ -1,17 +1,20 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useRef } from 'react';
-import { setSearchResults } from '../Redux/searchSlice'; // Import action to clear results
+import { useNavigate } from 'react-router-dom';
+import { setSearchResults } from '../Redux/searchSlice';
+import '../Styles/SearchProduct.css';
+
 
 const SearchProduct = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { searchResults, loading, error } = useSelector((state) => state.search);
   const resultsRef = useRef(null);
 
-  // Hide search results when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (resultsRef.current && !resultsRef.current.contains(event.target)) {
-        dispatch(setSearchResults([])); // Clear results when clicking outside
+        dispatch(setSearchResults([]));
       }
     };
 
@@ -33,15 +36,23 @@ const SearchProduct = () => {
   }
 
   return (
-    <div ref={resultsRef} aria-live="polite" className="search-results position-relative">
+    <div ref={resultsRef} className="search-results position-relative">
       {searchResults.length > 0 ? (
         <ul>
           {searchResults.map((product) => (
-            <li key={product.id}>{product.name}</li>
+            <li
+              key={product.id}
+              style={{ cursor: 'pointer', color: 'blue' }}
+              onClick={() => {
+                navigate(`/ProductPage#${product.id}`);
+                dispatch(setSearchResults([]));
+              }}
+            >
+              {product.name}
+            </li>
           ))}
         </ul>
       ) : (
-        // Only show "No results found." if the user has typed something
         searchResults !== null && <p>No results found.</p>
       )}
     </div>

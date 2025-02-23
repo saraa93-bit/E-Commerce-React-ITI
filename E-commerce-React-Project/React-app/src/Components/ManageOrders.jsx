@@ -9,7 +9,6 @@ const ManageOrdersTable = () => {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [orderToDelete, setOrderToDelete] = useState(null);
 
-  // Fetch orders from the server
   useEffect(() => {
     const fetchOrders = async () => {
       try {
@@ -24,14 +23,12 @@ const ManageOrdersTable = () => {
     fetchOrders();
   }, []);
 
-  // Handle order confirmation
   const handleConfirm = async (orderId) => {
     try {
       console.log("Confirming order:", orderId);
       const response = await axios.put(`http://localhost:3000/orders/${orderId}`, { status: "Confirmed" });
       console.log("Order confirmed successfully:", response.data);
 
-      // Update the state
       setOrders((prevOrders) =>
         prevOrders.map((order) =>
           order.orderId === orderId ? { ...order, status: "Confirmed" } : order
@@ -42,33 +39,28 @@ const ManageOrdersTable = () => {
     }
   };
 
-  // Handle delete button click
   const handleDeleteClick = (orderId) => {
     console.log("Delete button clicked for order:", orderId);
     setOrderToDelete(orderId);
     setShowDeleteModal(true);
   };
 
-  // Handle delete confirmation
   const handleDeleteConfirm = async () => {
     try {
       console.log("Deleting order:", orderToDelete);
       const response = await axios.delete(`http://localhost:3000/orders/${orderToDelete}`);
       console.log("Order deleted successfully:", response.data);
 
-      // Update the state
       setOrders((prevOrders) =>
         prevOrders.filter((order) => order.orderId !== orderToDelete)
       );
 
-      // Close the modal
       setShowDeleteModal(false);
     } catch (error) {
       console.error("Error deleting order:", error);
     }
   };
 
-  // Handle delete cancellation
   const handleDeleteCancel = () => {
     console.log("Delete action cancelled");
     setShowDeleteModal(false);
@@ -131,7 +123,6 @@ const ManageOrdersTable = () => {
         </tbody>
       </Table>
 
-      {/* Delete Confirmation Modal */}
       <Modal show={showDeleteModal} onHide={handleDeleteCancel}>
         <Modal.Header closeButton>
           <Modal.Title>Confirm Delete</Modal.Title>

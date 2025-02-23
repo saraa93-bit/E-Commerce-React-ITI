@@ -1,0 +1,73 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.login-container .row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.login-container .card {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.login-container .card-body {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.login-container .form-control {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding: 0.4rem;
+}
+
+.login-container .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.login-container .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.login-container .btn-outline-danger {
+  border-radius: 5px;
+  padding: 0.4rem;
+}
+
+.login-container .text-center {
+  text-align: center;
+}
+
+.login-container .text-decoration-none {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.login-container .text-decoration-none:hover {
+  text-decoration: underline;
+}
+
+.login-container img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.max-width-form {
+  max-width: 400px;
+  width: 100%;
+}
